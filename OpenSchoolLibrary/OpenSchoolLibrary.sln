@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenSchoolLibrary.API", "Op
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenSchoolLibrary.Tests", "OpenSchoolLibrary.Tests\OpenSchoolLibrary.Tests.csproj", "{4F3B71AD-59F3-466A-9959-3350A2C8CEDF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenSchoolLibrary.Data", "OpenSchoolLibrary.Data\OpenSchoolLibrary.Data.csproj", "{F7079924-AEAE-4F9D-A88A-742C2B54EF06}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{4F3B71AD-59F3-466A-9959-3350A2C8CEDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F3B71AD-59F3-466A-9959-3350A2C8CEDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F3B71AD-59F3-466A-9959-3350A2C8CEDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7079924-AEAE-4F9D-A88A-742C2B54EF06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7079924-AEAE-4F9D-A88A-742C2B54EF06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7079924-AEAE-4F9D-A88A-742C2B54EF06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7079924-AEAE-4F9D-A88A-742C2B54EF06}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
