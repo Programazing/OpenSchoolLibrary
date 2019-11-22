@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenSchoolLibrary", "OpenSchoolLibrary\OpenSchoolLibrary.csproj", "{230C115F-7F0A-4FA9-BCBF-20DEC927F1EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenSchoolLibrary.API", "OpenSchoolLibrary\OpenSchoolLibrary.API.csproj", "{230C115F-7F0A-4FA9-BCBF-20DEC927F1EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenSchoolLibrary.Tests", "OpenSchoolLibrary.Tests\OpenSchoolLibrary.Tests.csproj", "{4F3B71AD-59F3-466A-9959-3350A2C8CEDF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenSchoolLibrary.Tests", "OpenSchoolLibrary.Tests\OpenSchoolLibrary.Tests.csproj", "{4F3B71AD-59F3-466A-9959-3350A2C8CEDF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
