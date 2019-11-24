@@ -1,4 +1,6 @@
-﻿using OpenSchoolLibrary.Entities.Models;
+﻿using Moq;
+using OpenSchoolLibrary.Entities.Interfaces;
+using OpenSchoolLibrary.Entities.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -31,5 +33,15 @@ namespace OpenSchoolLibrary.Tests.Data
                 LastName = "Straw", StudentID = 5486, Teacher = new Teacher { }, TeacherID = 342 }
             };
         }
+
+        public static IBookRepository GetBookRepository()
+        {
+            var mock = new Mock<IBookRepository>();
+            mock.Setup(b => b.GetBooks()).Returns(() => GetBookList());
+
+            return mock.Object;
+        }
+
+
     }
 }
