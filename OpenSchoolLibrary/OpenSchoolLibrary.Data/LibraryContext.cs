@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using OpenSchoolLibrary.Common.Models;
+using OpenSchoolLibrary.Entities.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;

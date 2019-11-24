@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using OpenSchoolLibrary.Common.Models;
+using OpenSchoolLibrary.Entities.Interfaces;
+using OpenSchoolLibrary.Entities.Models;
 
 namespace OpenSchoolLibrary.Data
 {

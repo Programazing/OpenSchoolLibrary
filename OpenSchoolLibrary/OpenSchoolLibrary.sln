@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenSchoolLibrary.API", "OpenSchoolLibrary\OpenSchoolLibrary.API.csproj", "{230C115F-7F0A-4FA9-BCBF-20DEC927F1EB}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenSchoolLibrary.Tests", "OpenSchoolLibrary.Tests\OpenSchoolLibrary.Tests.csproj", "{4F3B71AD-59F3-466A-9959-3350A2C8CEDF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenSchoolLibrary.Data", "OpenSchoolLibrary.Data\OpenSchoolLibrary.Data.csproj", "{F7079924-AEAE-4F9D-A88A-742C2B54EF06}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenSchoolLibrary.Data", "OpenSchoolLibrary.Data\OpenSchoolLibrary.Data.csproj", "{F7079924-AEAE-4F9D-A88A-742C2B54EF06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenSchoolLibrary.Common", "OpenSchoolLibrary.Common\OpenSchoolLibrary.Common.csproj", "{C5FFE17D-CE63-41A5-AE72-4CCB1AA251B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenSchoolLibrary.Common", "OpenSchoolLibrary.Common\OpenSchoolLibrary.Common.csproj", "{C5FFE17D-CE63-41A5-AE72-4CCB1AA251B8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenSchoolLibrary.API", "OpenSchoolLibrary.API\OpenSchoolLibrary.API.csproj", "{3785DB26-E8F5-4B48-8265-41E1D84C4A6E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenSchoolLibrary.Entities", "OpenSchoolLibrary.Entities\OpenSchoolLibrary.Entities.csproj", "{95229B55-341F-4A1B-A09D-BEEB111F49EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{230C115F-7F0A-4FA9-BCBF-20DEC927F1EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{230C115F-7F0A-4FA9-BCBF-20DEC927F1EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{230C115F-7F0A-4FA9-BCBF-20DEC927F1EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{230C115F-7F0A-4FA9-BCBF-20DEC927F1EB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4F3B71AD-59F3-466A-9959-3350A2C8CEDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4F3B71AD-59F3-466A-9959-3350A2C8CEDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F3B71AD-59F3-466A-9959-3350A2C8CEDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +31,14 @@ Global
 		{C5FFE17D-CE63-41A5-AE72-4CCB1AA251B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5FFE17D-CE63-41A5-AE72-4CCB1AA251B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5FFE17D-CE63-41A5-AE72-4CCB1AA251B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3785DB26-E8F5-4B48-8265-41E1D84C4A6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3785DB26-E8F5-4B48-8265-41E1D84C4A6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3785DB26-E8F5-4B48-8265-41E1D84C4A6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3785DB26-E8F5-4B48-8265-41E1D84C4A6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95229B55-341F-4A1B-A09D-BEEB111F49EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95229B55-341F-4A1B-A09D-BEEB111F49EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95229B55-341F-4A1B-A09D-BEEB111F49EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95229B55-341F-4A1B-A09D-BEEB111F49EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
