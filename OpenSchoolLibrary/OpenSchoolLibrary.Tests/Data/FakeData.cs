@@ -1,8 +1,10 @@
 ﻿using Moq;
+using OpenSchoolLibrary.Data;
 using OpenSchoolLibrary.Entities.Interfaces;
 using OpenSchoolLibrary.Entities.Models;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace OpenSchoolLibrary.Tests.Data
@@ -37,11 +39,11 @@ namespace OpenSchoolLibrary.Tests.Data
         public static IBookRepository GetBookRepository()
         {
             var mock = new Mock<IBookRepository>();
-            mock.Setup(b => b.GetBooks()).Returns(() => GetBookList());
+            mock.Setup(b => b.GetBooks()).Returns(() => GetBookList().AsQueryable());
+            mock.Setup(b => b.BookIsCheckedOut(1)).Returns(true);
+            mock.Setup(b => b.BookIsCheckedOut(2)).Returns(false);
 
             return mock.Object;
         }
-
-
     }
 }
