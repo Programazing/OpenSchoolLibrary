@@ -4,7 +4,7 @@ namespace OpenSchoolLibrary.Entities.Interfaces
 {
     public interface ILoan
     {
-        IBookRepository Repository { set; }
+        IBookDataGateway DataGateway { set; }
 
         bool CheckOut(int bookId, int studentId);
         bool CheckIn(int bookId);

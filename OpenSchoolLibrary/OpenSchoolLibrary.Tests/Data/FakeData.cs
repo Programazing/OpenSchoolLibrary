@@ -36,9 +36,9 @@ namespace OpenSchoolLibrary.Tests.Data
             };
         }
 
-        public static IBookRepository GetBookRepository()
+        public static IBookDataGateway GetBookData()
         {
-            var mock = new Mock<IBookRepository>();
+            var mock = new Mock<IBookDataGateway>();
             mock.Setup(b => b.GetBooks()).Returns(() => GetBookList().AsQueryable());
             mock.Setup(b => b.BookIsCheckedOut(1)).Returns(true);
             mock.Setup(b => b.BookIsCheckedOut(2)).Returns(false);

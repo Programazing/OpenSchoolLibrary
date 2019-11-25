@@ -8,7 +8,7 @@ using System.Text;
 
 namespace OpenSchoolLibrary.Entities.Interfaces
 {
-    public interface IBookRepository
+    public interface IBookDataGateway
     {
         IQueryable<Book> GetBooks();
 

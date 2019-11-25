@@ -11,19 +11,19 @@ using System.Linq;
 namespace OpenSchoolLibrary.Tests.Data
 {
     [TestFixture]
-    public class BookRepository
+    public class BookDataGateway
     {
-        private IBookRepository Repository { get; set; }
+        private IBookDataGateway Gateway { get; set; }
 
-        public BookRepository()
+        public BookDataGateway()
         {
-            Repository = FakeData.GetBookRepository();
+            Gateway = FakeData.GetBookData();
         }
 
         [Test]
         public void GetBooks_ReturnsBooks()
         {
-            var sut = Repository.GetBooks();
+            var sut = Gateway.GetBooks();
 
             sut.Count().Should().Be(3);
             sut.FirstOrDefault().Author.Should().Be("James Dewey");

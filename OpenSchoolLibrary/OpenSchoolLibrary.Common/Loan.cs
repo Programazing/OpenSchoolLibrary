@@ -9,11 +9,11 @@ namespace OpenSchoolLibrary.Common
 {
     public class Loan : ILoan
     {
-        public IBookRepository Repository { private get; set; }
+        public IBookDataGateway DataGateway { private get; set; }
 
-        public Loan(IBookRepository bookRepository)
+        public Loan(IBookDataGateway dataGateway)
         {
-            Repository = bookRepository;
+            DataGateway = dataGateway;
         }
 
         public bool CheckIn(int bookId)
@@ -23,9 +23,9 @@ namespace OpenSchoolLibrary.Common
 
         public bool CheckOut(int bookId, int studentId)
         {
-            if(Repository.BookIsCheckedOut(bookId)){ return false; }
+            if(DataGateway.BookIsCheckedOut(bookId)){ return false; }
 
-            return Repository.CheckOutBook(bookId, studentId);
+            return DataGateway.CheckOutBook(bookId, studentId);
         }
     }
 }

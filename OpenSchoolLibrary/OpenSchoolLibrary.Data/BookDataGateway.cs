@@ -8,11 +8,11 @@ using OpenSchoolLibrary.Entities.Models;
 
 namespace OpenSchoolLibrary.Data
 {
-    public class BookRepository : IBookRepository
+    public class BookDataGateway : IBookDataGateway
     {
         public LibraryContext Context { get; private set; }
 
-        public BookRepository(LibraryContext libraryContext)
+        public BookDataGateway(LibraryContext libraryContext)
         {
             Context = libraryContext;
         }
