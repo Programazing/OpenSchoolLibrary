@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\OpenSchoolLibrary.Common\OpenSchoolLibrary.Common.csproj" />
     <ProjectReference Include="..\OpenSchoolLibrary.Data\OpenSchoolLibrary.Data.csproj" />
     <ProjectReference Include="..\OpenSchoolLibrary.Entities\OpenSchoolLibrary.Entities.csproj" />
   </ItemGroup>

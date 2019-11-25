@@ -45,5 +45,14 @@ namespace OpenSchoolLibrary.Tests.Data
 
             return mock.Object;
         }
+
+        public static ILoan GetLoan()
+        {
+            var mock = new Mock<ILoan>();
+            mock.Setup(x => x.CheckOut(2, 0758)).Returns(true);
+            mock.Setup(x => x.CheckOut(1, 0758)).Returns(false);
+
+            return mock.Object;
+        }
     }
 }

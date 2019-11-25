@@ -1,8 +1,12 @@
-﻿namespace OpenSchoolLibrary.Entities.Interfaces
+﻿using OpenSchoolLibrary.Entities.Models;
+
+namespace OpenSchoolLibrary.Entities.Interfaces
 {
     public interface ILoan
     {
-        bool CheckOut(IBookRepository repo);
-        bool CheckIn();
+        IBookRepository Repository { set; }
+
+        bool CheckOut(int bookId, int studentId);
+        bool CheckIn(int bookId);
     }
 }
